@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { ReactComponent as LogoPic} from "../img/nav-logo.svg"
 import { ReactComponent as LinkedInLogo } from "../img/linkedin.svg"
 import { ReactComponent as GithubLogo } from "../img/github.svg"
-import { Link } from 'react-router-dom';
 
 const Header = styled.header`
     width: 100%;
