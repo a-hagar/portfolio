@@ -175,7 +175,7 @@ const Works = () => {
                     <GridContainer>
                         <GridItem>
                         <h2>Tracktistics
-                            <a href='' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo /></a>
+                            <a href='https://github.com/a-hagar/tracktistics' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo /></a>
                         </h2>
                             <p>A full-stack app that allows Spotify users to visualize their music tastes, from top artists, songs and genres</p>
                             <div className='techList'>
@@ -188,7 +188,7 @@ const Works = () => {
                         </GridItem>
                         <GridItem>
                         <h2>SafeDine
-                            <a href='' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo /></a>
+                            <a href='https://github.com/a-hagar/safedine' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo /></a>
                         </h2>
                         <p>A single-page application that allows users to find nearby restaurants in their locations using the Yelp & Google Maps APIs</p>
                         <div className='techList'>
@@ -196,14 +196,20 @@ const Works = () => {
                                 <TechTab>React</TechTab>
                                 <TechTab>Next.js</TechTab>
                                 <TechTab>Tailwind CSS</TechTab>
-                            </div>
+                        </div>
                         </GridItem>
                         <GridItem>
-                            <h2>Tracktistics
-                                <a href='' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo /></a>
+                            <h2>Notes+
+                                <a href='https://github.com/a-hagar/notes' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo /></a>
                             </h2>
-                            <p>A full-stack project that allows Spotify users to visualize their music tastes, from top artists, songs and genres</p>
-
+                            <p>A note-taking app that lists your notes in chronological order. Write, edit, and delete notes of any size.</p>
+                            <div className='techList'>
+                            <span id='text'>Built with: </span>
+                                <TechTab>HTML</TechTab>
+                                <TechTab>CSS</TechTab>
+                                <TechTab>Javascript</TechTab>
+                                <TechTab>JQuery</TechTab>
+                        </div>
                         </GridItem>
                     </GridContainer>
                 </WorksDiv>
