@@ -4,9 +4,13 @@ import Profile from "../img/profile-2.jpg"
 
 const Bg = styled.div`
     width: 100%;
-    height: 90vh;
+    height: 850px;
     background-color: ${props => props.theme.body};
     transition: all 0.5s ease;
+
+    @media(max-width: 500px){
+        height: 750px;
+    }
 
 `;
 

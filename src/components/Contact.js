@@ -5,13 +5,13 @@ import { ReactComponent as MailLogo } from "../img/mail.svg"
 
 const Bg = styled.div`
     width: 100%;
-    height: 90vh;
+    height: 845px;
     background-color: ${props => props.theme.body};
     transition: all 0.5s ease;
     padding-top: 50px;
 
     @media(max-width: 500px){
-        height: 85vh;
+        height: 750px;
     }
 `;
 

@@ -4,12 +4,13 @@ import { ReactComponent as GithubLogo } from "../img/github.svg"
 
 const Bg = styled.div`
     width: 100%;
-    height: 100vh;
+    min-height: 800px;
     background-color: ${props => props.theme.fontColor};
     transition: all 0.5s ease;
 
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
         height: 1100px;
+        padding-bottom: 50px;
     }
 
     @media (orientation:landscape) and (max-width: 800px){
@@ -87,6 +88,8 @@ const GridContainer = styled.div`
     gap: 20px;
     grid-template-columns: repeat( auto-fit, minmax(0, 1fr) );
     word-break:break-all;
+    margin-top: 50px;
+    padding: 50px 0px;
 
     @media(max-width: 768px){
         margin-top 90px;
