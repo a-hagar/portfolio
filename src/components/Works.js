@@ -177,16 +177,15 @@ const Works = () => {
                     
                     <GridContainer>
                         <GridItem>
-                        <h2>Tracktistics
-                            <a href='https://github.com/a-hagar/tracktistics' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo /></a>
+                        <h2>LibraryCMS
+                            <a href='https://github.com/a-hagar/LibraryCMS' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo /></a>
                         </h2>
-                            <p>A full-stack app that allows Spotify users to visualize their music tastes, from top artists, songs and genres</p>
+                            <p>A CRUD-based application that allows users to access information about registered members, books, and locations. Authenicated users can edit and delete info from the database. Built with Code-First Migrations.</p>
                             <div className='techList'>
                                 <span id='text'>Built with: </span>
-                                    <TechTab>React</TechTab>
-                                    <TechTab>Node.js</TechTab>
-                                    <TechTab>D3.js</TechTab>
-                                    <TechTab>Styled Components</TechTab>
+                                    <TechTab>ASP.NET MVC</TechTab>
+                                    <TechTab>C#</TechTab>
+                                    <TechTab>SQL Server</TechTab>
                             </div>
                         </GridItem>
                         <GridItem>
