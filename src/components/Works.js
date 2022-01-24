@@ -172,7 +172,7 @@ const Works = () => {
             <div id='works'>
                 <WorksDiv>
                     <Title>Past Projects
-                        <SubTitle>Some projects that I worked on. Find more of my work on <a href='https://www.linkedin.com/in/ahmhagar/' target="_blank" rel="noopener noreferrer">Github</a></SubTitle>
+                        <SubTitle>Some projects that I worked on. Find more of my work on <a href='https://www.github.com/a-hagar' target="_blank" rel="noopener noreferrer">Github</a></SubTitle>
                     </Title>
                     
                     <GridContainer>
