@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import PDF from "../files/resume.pdf"
+import PDF from "../files/Hagar_resume.pdf"
 import Profile from "../img/hero_profile.png"
 
 const Bg = styled.div`
