@@ -54,7 +54,11 @@ position:relative;
         font-size: 2.3em;
         text-align: center;
         width: 100%;
-        margin: 30px auto;
+        margin: 10px auto;
+    }
+
+    @media(max-width: 520px){
+        margin: 10px auto;
     }
 
 
@@ -78,12 +82,21 @@ const SubTitle = styled.p`
     }
 
     @media(max-width: 768px){
+        margin-top: 15px;
         width: 100%;
         font-size: 0.5em;
         padding-left: 0px;
 
         &.last{
             margin: 10px auto 20px auto;
+        }
+    }
+
+    @media(max-width: 520px){
+        margin-bottom: 5px;
+
+        &.last{
+            margin: 5px auto 10px auto;
         }
     }
 
@@ -148,7 +161,6 @@ const AboutPic = styled.img`
 
 const ResumeBtn = styled.a`
     appearance: button; 
-    -webkit-appearance: none;
     font-size: 20px;
     margin: 20px 0px;
     border: 1px solid ${props => props.theme.fontColor};
@@ -158,7 +170,7 @@ const ResumeBtn = styled.a`
     text-decoration: none;
 
     &:hover{
-        color: ${props => props.theme.body};
+        color: ${props => props.theme.accent};
         background-color: ${props => props.theme.fontColor};
         transform: scale(1.02);
         transition: all 0.3s ease;
@@ -181,7 +193,7 @@ const Hero = (props) => {
             <HeroDiv>
                 <HeroImg>
                     <ImgBg>
-                        <AboutPic src={Profile}/>
+                        <AboutPic src={Profile} alt="Hi! This is an image of Ahmed"/>
                     </ImgBg>
                 </HeroImg>
                 <Title>

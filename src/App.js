@@ -10,7 +10,7 @@ const lightTheme =  {
   fontColor: '#033A37',
   body: '#FFEFEB', //'#F1E9DB'// 
   secondBody: '#',
-  accent: '#'
+  accent: '#F05365'
 };
 
 const darkTheme =  {

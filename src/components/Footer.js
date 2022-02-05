@@ -6,16 +6,16 @@ const FooterContainer = styled.footer`
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 105px;
-    margin-bottom: -10px;
+    height: 100px;
     background-color: ${props => props.theme.fontColor};
+    padding-bottom: 10px;
     transition: all 0.5s ease;
 
 `;
 
 const FooterContent = styled.footer`
     margin: 0px auto 0px;
-    height: 90%;
+    height: 100%;
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -100,7 +100,7 @@ const Footer = (props) => {
     return (
         <FooterContainer>
             <FooterContent>
-                <Logo href='/'>
+                <Logo href='https://ahmedhagar.com/'>
                 <LogoPic />
                 </Logo>
                 <Copyright>

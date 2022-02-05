@@ -5,7 +5,7 @@ import { ReactComponent as MailLogo } from "../img/mail.svg"
 
 const Bg = styled.div`
     width: 100%;
-    height: 845px;
+    height: 875px;
     background-color: ${props => props.theme.body};
     transition: all 0.5s ease;
     padding-top: 50px;

@@ -163,7 +163,7 @@ const Navbar = (props) => {
     return (
         <Header>
             <NavContent>
-                <Logo href='/'>
+                <Logo href='https://ahmedhagar.com/'>
                     <LogoPic />
                 </Logo>
                 <Menu>
@@ -182,7 +182,7 @@ const Navbar = (props) => {
                     </MenuLink>
                 </Menu>
                 <ToggleContainer>
-                        <Toggle id="checkbox" type="checkbox" onClick={changeTheme}/>
+                        <Toggle id="checkbox" type="checkbox" label="DarkModeSwitch" onClick={changeTheme}/>
                         <ToggleLabel htmlFor="checkbox" />
                 </ToggleContainer>
             </NavContent>

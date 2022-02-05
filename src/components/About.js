@@ -151,7 +151,7 @@ const About = (props) => {
                 <HeroDiv>
                     <HeroImg>
                         <ImgBg>
-                            <AboutPic src={Profile}/>
+                            <AboutPic src={Profile} alt="Another picture of me, taking a picture of me"/>
                         </ImgBg>
                     </HeroImg>
                     <Title>

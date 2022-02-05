@@ -154,7 +154,7 @@ const Works = () => {
                     <GridContainer>
                         <GridItem>
                         <h2>LibraryCMS
-                            <a href='https://github.com/a-hagar/LibraryCMS' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo /></a>
+                            <a href='https://github.com/a-hagar/LibraryCMS' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo id='LibraryCMS-Github'/></a>
                         </h2>
                             <p>A CRUD-based application that allows users to access information about registered members, books, and locations. Authenicated users can also edit and delete content.</p>
                             <div className='techList'>
@@ -166,7 +166,7 @@ const Works = () => {
                         </GridItem>
                         <GridItem>
                         <h2>SafeDine
-                            <a href='https://github.com/a-hagar/safedine' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo /></a>
+                            <a href='https://github.com/a-hagar/safedine' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo id='SafeDine-Github' /></a>
                         </h2>
                         <p>A single-page application that allows users to find nearby restaurants in their locations using the Yelp & Google Maps APIs</p>
                         <div className='techList'>
@@ -178,7 +178,7 @@ const Works = () => {
                         </GridItem>
                         <GridItem>
                             <h2>Notes+
-                                <a href='https://github.com/a-hagar/notes' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo /></a>
+                                <a href='https://github.com/a-hagar/notes' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo id='Notes-Github' /></a>
                             </h2>
                             <p>A note-taking app that lists your notes in chronological order. Write, edit, and delete notes of any size.</p>
                             <div className='techList'>
