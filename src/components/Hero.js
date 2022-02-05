@@ -78,13 +78,13 @@ const SubTitle = styled.p`
 
     @media(max-width: 820px){
         padding-left: 0px;
-        font-size: 22px;
+        font-size: 15px;
     }
 
     @media(max-width: 768px){
         margin-top: 15px;
         width: 100%;
-        font-size: 0.5em;
+        font-size: 20px;
         padding-left: 0px;
 
         &.last{
@@ -93,6 +93,7 @@ const SubTitle = styled.p`
     }
 
     @media(max-width: 520px){
+        font-size: 13px;
         margin-bottom: 5px;
 
         &.last{

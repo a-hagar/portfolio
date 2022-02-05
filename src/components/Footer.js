@@ -100,8 +100,8 @@ const Footer = (props) => {
     return (
         <FooterContainer>
             <FooterContent>
-                <Logo href='https://ahmedhagar.com/'>
-                <LogoPic />
+                <Logo href='https://ahmedhagar.com/' aria-label="Ahmed's Portfolio">
+                    <LogoPic alt="Ahmed Hagar, the logo on the Footer" />
                 </Logo>
                 <Copyright>
                     <p>

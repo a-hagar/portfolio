@@ -101,6 +101,10 @@ const ToggleLabel = styled.label`
     background: ${props => props.theme.fontColor};
     cursor: pointer;
 
+    p{
+        display: none;
+    }
+
     &::focus {
         background: #272932;
     }
@@ -163,8 +167,8 @@ const Navbar = (props) => {
     return (
         <Header>
             <NavContent>
-                <Logo href='https://ahmedhagar.com/'>
-                    <LogoPic />
+                <Logo href='https://ahmedhagar.com/' aria-label="Ahmed's Portfolio">
+                    <LogoPic alt="Ahmed Hagar, the logo"/>
                 </Logo>
                 <Menu>
                     <MenuLink href='/#works'>Works</MenuLink>
@@ -181,10 +185,12 @@ const Navbar = (props) => {
                         </MenuLogo>
                     </MenuLink>
                 </Menu>
+                <form>
                 <ToggleContainer>
-                        <Toggle id="checkbox" type="checkbox" label="DarkModeSwitch" onClick={changeTheme}/>
-                        <ToggleLabel htmlFor="checkbox" />
+                        <Toggle id="checkbox" type="checkbox" onClick={changeTheme}/>
+                        <ToggleLabel label="DarkModeSwitch" htmlFor="checkbox"><p>Toggle</p></ToggleLabel>
                 </ToggleContainer>
+                </form>
             </NavContent>
         </Header>
     )
