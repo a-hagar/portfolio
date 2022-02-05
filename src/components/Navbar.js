@@ -40,6 +40,7 @@ const Logo = styled.a`
 
         rect{
             fill: ${props => props.theme.fontColor};
+            stroke: ${props => props.theme.fontColor};
         }
 
         path{

@@ -9,13 +9,15 @@ import Writing from "./pages/Writing";
 const lightTheme =  {
   fontColor: '#033A37',
   body: '#FFEFEB', //'#F1E9DB'// 
-  accent: ''
+  secondBody: '#',
+  accent: '#'
 };
 
 const darkTheme =  {
   fontColor: '#F8F6F1',
   body:'#033A37', //#272932
-  accent: ''
+  secondBody: '#',
+  accent: '#'
 };
 
 const themes = {

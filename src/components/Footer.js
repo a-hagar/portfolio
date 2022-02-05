@@ -1,18 +1,16 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import { ReactComponent as LogoPic} from "../img/nav-logo.svg";
 
 const FooterContainer = styled.footer`
     left: 0;
     bottom: 0;
     width: 100%;
     height: 105px;
-    margin-bottom: 0;
-    background-color: ${props => props.theme.body};
+    margin-bottom: -10px;
+    background-color: ${props => props.theme.fontColor};
     transition: all 0.5s ease;
-    
-    @media(max-width: 768px){
-        
-    }
+
 `;
 
 const FooterContent = styled.footer`
@@ -25,9 +23,6 @@ const FooterContent = styled.footer`
     flex-wrap: wrap;
     border-top: 0.5px solid ${props => props.theme.fontColor};
 
-    @media(max-width: 768px){
-
-    }
 `;
 
 const Logo = styled.a`
@@ -37,7 +32,7 @@ const Logo = styled.a`
     text-decoration: none;
     color: #272932;
     display: flex;
-    align-items:center;
+    align-items: center;
 
     &:hover{
         text-decoration: none;
@@ -47,12 +42,41 @@ const Logo = styled.a`
     span {
         font-weight: 300;
     }
+
+    svg{
+        width: 45px;
+        height: 45px;
+
+        rect{
+            fill: ${props => props.theme.body};
+            stroke: ${props => props.theme.body};
+        }
+
+        path{
+            fill: ${props => props.theme.fontColor};
+        }
+    }
+
+
+
+    &:hover{
+        text-decoration: underline;
+        transition: text-decoration 0.5s ease;
+    }
+
+    &:visited{
+        color: ${props => props.theme.fontColor};
+    }
+
+    @media(max-width: 355px){
+        display: none;
+    }
 `;
 
 const Copyright = styled.div`
     p, a{
         text-decoration: none;
-        color: ${props => props.theme.fontColor};
+        color: ${props => props.theme.body};
         padding: 10px 0px;
         margin: 10px 0px;
     }
@@ -64,6 +88,12 @@ const Copyright = styled.div`
     a:visited{
         color: ${props => props.theme.fontColor};
     }
+
+    @media(max-width: 768px){
+        p, a{
+            text-align: center;
+        }
+    }
 `;
 
 const Footer = (props) => {
@@ -71,10 +101,11 @@ const Footer = (props) => {
         <FooterContainer>
             <FooterContent>
                 <Logo href='/'>
+                <LogoPic />
                 </Logo>
                 <Copyright>
                     <p>
-                        &copy; {(new Date().getFullYear())}, Made by A Hagar
+                        &copy; {(new Date().getFullYear())}, Made by Ahmed Hagar
                     </p>
                 </Copyright>
             </FooterContent>

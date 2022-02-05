@@ -5,7 +5,8 @@ import Profile from "../img/hero_profile.png"
 
 const Bg = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 90vh;
+    min-height: 800px;
     background-color: ${props => props.theme.body};
     transition: all 0.5s ease;
     
@@ -16,7 +17,7 @@ const Bg = styled.div`
     }
 
     @media (orientation:landscape) and (max-width: 800px){
-        height: 650px;
+        height: 2000px;
     }
 `;
 
@@ -30,13 +31,13 @@ const HeroDiv = styled.div`
     flex-direction: row-reverse;
 
     @media(max-width: 768px){
-        padding-top: 0px;
+        padding-top: 80px;
         flex-direction: column;
     }
 
-    @media (orientation:landscape) and (max-width: 800px){
-        padding-top: 40px;
-        height: 100%;
+    @media (orientation:landscape) and (max-width: 900px){
+        padding-top: 50px;
+        height: 0px;
     }
 `;
 
@@ -72,7 +73,7 @@ const SubTitle = styled.p`
     }
 
     @media(max-width: 820px){
-        padding-left: 20px;
+        padding-left: 0px;
         font-size: 22px;
     }
 
