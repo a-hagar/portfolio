@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import PDF from "../files/Hagar_resume.pdf"
-import Profile from "../img/hero_profile.png"
+
 
 const Bg = styled.div`
     width: 100%;
@@ -28,10 +27,12 @@ const HeroDiv = styled.div`
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row-reverse;
+    justify-content: space-between;
 
     @media(max-width: 768px){
-        padding-top: 0px;
+        padding-top: 100px;
         flex-direction: column;
+        justify-content: flex-start;
     }
 
     @media (orientation:landscape) and (max-width: 800px){
@@ -41,13 +42,14 @@ const HeroDiv = styled.div`
 `;
 
 const Title = styled.h1`
-display: block;
-position:relative;
+    display: block;
+    position: relative;
     margin-top: 40px;
-    font-size: 50px;
+    font-size: 45px;
     color: ${props => props.theme.fontColor};
-    width: 50%;
+    width: 45%;
     font-weight: 700;
+    float: left;
 
     @media(max-width: 768px){
         font-size: 2.3em;
@@ -55,25 +57,22 @@ position:relative;
         width: 100%;
         margin: 30px auto;
     }
-
-
 `;
 
 const SubTitle = styled.p`
-    margin-top: 25px;
-    font-size: 25px;
+    margin-top: 20px;
+    font-size: 20px;
     color: ${props => props.theme.fontColor};
     font-weight: 400;
     margin-bottom: 10px;
 
-
     &.last{
-        margin: 0px 0px 50px 0px;
+        margin-bottom: 50px;
     }
 
     @media(max-width: 820px){
-        padding-left: 20px;
-        font-size: 22px;
+        padding-left: 0px;
+        font-size: 18px;
     }
 
     @media(max-width: 768px){
@@ -82,10 +81,9 @@ const SubTitle = styled.p`
         padding-left: 0px;
 
         &.last{
-            margin: 10px auto 20px auto;
+            margin: 10px auto 30px auto;
         }
     }
-
 `;
 
 const HeroImg = styled.div`
@@ -95,53 +93,19 @@ const HeroImg = styled.div`
     color: ${props => props.theme.fontColor};
 
     @media(max-width: 768px){
-        width: 100%;
+        width: 80%;
     }
-
-`;
-
-const ImgBg = styled.div`
-    display: block;
-    position:relative;
-    height: 400px;
-    width: 400px;
-    background-color: ${props => props.theme.fontColor};
-    float: right;
-    border-radius: 100%;
-    overflow: hidden;
-
-    @media(max-width: 1024px){
-        height: 330px;
-        width: 330px;
-    }
-
-    @media(max-width: 768px){
-        height: 300px;
-        width: 300px;
-        margin: 60px auto 0px;
-        float: none;
-    }
-
-    @media(max-width: 500px){
-        height: 280px;
-        width: 280px;
-    }
-
-    @media(max-width: 375px){
-        height: 200px;
-        width: 200px;
-    }
-
-
 `;
 
 const AboutPic = styled.img`
     display: block;
-    position: absolute;
-    margin: 40px auto 0px auto;
+    margin: 0px auto 0px auto;
+    padding: 10px;
     height: 90%;
     max-width: 105%;
-    object-fit: contain;
+    border-radius: 10px;
+    border: 2px solid ${props => props.theme.fontColor};
+    box-shadow: 6px 10px 15px -3px ${props => props.theme.fontColor};
 `;
 
 
@@ -171,7 +135,6 @@ const ResumeBtn = styled.a`
         font-size: 15px;
         padding: 15px 30px;
     }
-
 `;
 
 const Hero = (props) => {
@@ -179,17 +142,12 @@ const Hero = (props) => {
         <Bg>
             <HeroDiv>
                 <HeroImg>
-                    <ImgBg>
-                        <AboutPic src={Profile}/>
-                    </ImgBg>
+                        <AboutPic src={props.img}/>
                 </HeroImg>
                 <Title>
-                    Hello, My name is Ahmed!
-                    <SubTitle className='first'>Developer. Designer. Writer.</SubTitle>
-                    <SubTitle className='last'>Based in Toronto, 🇨🇦</SubTitle>
-                    <ResumeBtn href={PDF} target = "_blank">
-                        View Resume
-                    </ResumeBtn>
+                    {props.title}
+                    <SubTitle className='first'>{props.subTitle1}</SubTitle>
+                    <SubTitle className='last'>{props.subTitle2}</SubTitle>
                 </Title>
             </HeroDiv>
         </Bg>

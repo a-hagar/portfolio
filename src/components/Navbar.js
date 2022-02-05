@@ -6,7 +6,7 @@ import { ReactComponent as GithubLogo } from "../img/github.svg"
 
 const Header = styled.header`
     width: 100%;
-    height: 100px;
+    height: 0px;
     background-color: ${props => props.theme.body};
     display: flex;
     align-items: center;
@@ -22,7 +22,6 @@ const NavContent = styled.nav`
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border-bottom: 1px solid ${props => props.theme.fontColor};
     transition: all 0.5s ease;
 `;
 

@@ -56,29 +56,6 @@ const Title = styled.h1`
     }
 `;
 
-const SubTitle = styled.p`
-    font-size: 25px;
-
-    a{
-        color: inherit;
-        text-decoration: none;
-    }
-
-    a:hover{
-        text-decoration: underline;
-    }
-
-
-    @media(max-width: 768px){
-        width: 100%;
-        font-size: 0.5em;
-
-        a{
-            text-decoration: underline;
-        }
-    }
-`;
-
 const GridContainer = styled.div`
     position: relative;
     display: grid;
@@ -171,8 +148,7 @@ const Works = () => {
         <Bg>
             <div id='works'>
                 <WorksDiv>
-                    <Title>Past Projects
-                        <SubTitle>Some projects that I worked on. Find more of my work on <a href='https://www.github.com/a-hagar' target="_blank" rel="noopener noreferrer">Github</a></SubTitle>
+                    <Title>Project Experience
                     </Title>
                     
                     <GridContainer>
@@ -180,7 +156,7 @@ const Works = () => {
                         <h2>LibraryCMS
                             <a href='https://github.com/a-hagar/LibraryCMS' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo /></a>
                         </h2>
-                            <p>A CRUD-based application that allows users to access information about registered members, books, and locations. Authenicated users can edit and delete info from the database. Built with Code-First Migrations.</p>
+                            <p>A CRUD-based application that allows users to access information about registered members, books, and locations. Authenicated users can also edit and delete content.</p>
                             <div className='techList'>
                                 <span id='text'>Built with: </span>
                                     <TechTab>ASP.NET MVC</TechTab>
