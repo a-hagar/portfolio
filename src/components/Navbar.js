@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { ReactComponent as LogoPic} from "../img/nav-logo.svg"
-import { ReactComponent as LinkedInLogo } from "../img/linkedin.svg"
-import { ReactComponent as GithubLogo } from "../img/github.svg"
+//import { ReactComponent as LinkedInLogo } from "../img/linkedin.svg"
+//import { ReactComponent as GithubLogo } from "../img/github.svg"
 
 const Header = styled.header`
     width: 100%;
@@ -15,7 +15,7 @@ const Header = styled.header`
 
 const NavContent = styled.nav`
     margin: 0px auto;
-    padding: 20px 30px 0px 30px;
+    padding: 20px 0px 0px 0px;
     width: 80%;
     height: 90px;
     display: flex;
@@ -23,7 +23,11 @@ const NavContent = styled.nav`
     align-items: center;
     flex-wrap: wrap;
     transition: all 0.5s ease;
-    border-bottom: 5px solid ${props => props.theme.fontColor};
+    border-bottom: 2px solid ${props => props.theme.fontColor};
+
+    @media(max-width: 768px){
+        flex-direction: row-reverse;
+    }
 `;
 
 const Logo = styled.a`
@@ -79,6 +83,7 @@ const Menu = styled.div`
     justify-content:  space-between;
     align-items: center;
     position: relative;
+    width: 220px;
     
     @media(max-width: 768px){
         display: none;
@@ -87,7 +92,7 @@ const Menu = styled.div`
 `;
 
 const MenuLink = styled.a`
-    padding: 0.8rem;
+    padding: 0.5rem;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -103,12 +108,17 @@ const MenuLink = styled.a`
 const ToggleContainer = styled.div`
     position: relative;
     padding-right: 5px;
+    width: 200px;
+
+    @media(max-width: 768px){
+        width: 75px;
+    }
 `;
 
 const ToggleLabel = styled.label`
     position: absolute;
     top: 19%;
-    left: 5%;
+    left: 8px;
     width: 50px;
     height: 25px;
     border-radius: 15px;
@@ -132,6 +142,10 @@ const ToggleLabel = styled.label`
         margin: 3px;
         background: ${props => props.theme.body};
         transition: 0.2s;
+    }
+
+    @media(max-width: 768px){
+        left: 37%;
     }
 
 `;
@@ -181,6 +195,10 @@ const Navbar = (props) => {
     return (
         <Header id="top">
             <NavContent>
+                <ToggleContainer>
+                        <Toggle id="checkbox" type="checkbox" onClick={changeTheme}/>
+                        <ToggleLabel label="DarkModeSwitch" htmlFor="checkbox"><p>Toggle</p></ToggleLabel>
+                </ToggleContainer>
                 <Logo href='https://ahmedhagar.com/' aria-label="Ahmed's Portfolio">
                     <LogoPic alt="Ahmed Hagar, the logo"/>
                 </Logo>
@@ -188,23 +206,7 @@ const Navbar = (props) => {
                     <MenuLink href='/#works'>Works</MenuLink>
                     <MenuLink href='/#about'>About</MenuLink>
                     <MenuLink href='/#contact'>Contact</MenuLink>
-                    <MenuLink href='https://www.linkedin.com/in/ahmhagar/' target="_blank" rel="noopener noreferrer">
-                        <MenuLogo>
-                            <LinkedInLogo />
-                        </MenuLogo>
-                    </MenuLink>
-                    <MenuLink href='https://github.com/a-hagar' target="_blank" rel="noopener noreferrer">
-                        <MenuLogo>
-                            <GithubLogo />
-                        </MenuLogo>
-                    </MenuLink>
                 </Menu>
-                <form>
-                <ToggleContainer>
-                        <Toggle id="checkbox" type="checkbox" onClick={changeTheme}/>
-                        <ToggleLabel label="DarkModeSwitch" htmlFor="checkbox"><p>Toggle</p></ToggleLabel>
-                </ToggleContainer>
-                </form>
             </NavContent>
         </Header>
     )

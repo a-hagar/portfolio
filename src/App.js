@@ -6,6 +6,8 @@ import Tracktistics from "./pages/Tracktistics";
 import Home from "./pages/Home";
 import Writing from "./pages/Writing";
 
+//palette: https://coolors.co/fe5f55-82a7a6-351e29-ffefeb-033a37
+
 const lightTheme =  {
   fontColor: '#033A37',
   body: '#FFEFEB', //'#F1E9DB'// 

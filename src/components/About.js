@@ -21,10 +21,11 @@ const HeroDiv = styled.div`
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: row;
 
     @media(max-width: 768px){
         padding-top: 70px;
-        flex-direction: column;
+        flex-direction: row;
     }
 `;
 
@@ -56,14 +57,14 @@ const SubTitle = styled.p`
     }
 
     @media(max-width: 820px){
-        padding-left: 0px;
+        padding-left: 10px;
         font-size: 22px;
     }
 
     @media(max-width: 768px){
         width: 100%;
         font-size: 0.5em;
-        padding-left: 10px;
+        padding-left: 0px;
 
         &.last{
             margin: 10px auto 30px auto;
@@ -118,8 +119,8 @@ const ImgBg = styled.div`
     }
 
     @media(max-width: 768px){
-        height: 300px;
-        width: 300px;
+        height: 280px;
+        width: 280px;
         margin: 0px auto;
         float: none;
         text-align: center;

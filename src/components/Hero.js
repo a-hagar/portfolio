@@ -17,7 +17,7 @@ const Bg = styled.div`
     }
 
     @media (orientation:landscape) and (max-width: 800px){
-        height: 2000px;
+        height: 800px;
     }
 `;
 
