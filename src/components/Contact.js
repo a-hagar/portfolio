@@ -5,7 +5,7 @@ import { ReactComponent as MailLogo } from "../img/mail.svg"
 
 const Bg = styled.div`
     width: 100%;
-    height: 875px;
+    height: 800px;
     background-color: ${props => props.theme.body};
     transition: all 0.5s ease;
     padding-top: 50px;
@@ -19,11 +19,11 @@ const ContactDiv = styled.div`
     position: relative;
     width: 80%;
     margin: 0px auto;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    border-top: 5px solid ${props => props.theme.fontColor};
+    border-top: 1px solid ${props => props.theme.fontColor};
 
     @media(max-width: 500px){
         height: 500px;

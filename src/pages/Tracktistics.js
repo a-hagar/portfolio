@@ -10,12 +10,6 @@ const Tracktistics = (props) => {
         <Navbar 
             theme={props.theme} 
             setTheme={props.setTheme}
-            navLinkTitle1 ={'Problem/Solution'}
-            navLinkHref1 ={''}
-            navLinkTitle2 ={''}
-            navLinkHref2 ={''}
-            navLinkTitle3 ={'Next Steps'}
-            navLinkHref3 ={''}
         />
         <CaseStudyHero 
             theme={props.theme} 

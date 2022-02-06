@@ -6,7 +6,7 @@ import { ReactComponent as GithubLogo } from "../img/github.svg"
 
 const Header = styled.header`
     width: 100%;
-    height: 0px;
+    height: 75px;
     background-color: ${props => props.theme.body};
     display: flex;
     align-items: center;
@@ -15,14 +15,15 @@ const Header = styled.header`
 
 const NavContent = styled.nav`
     margin: 0px auto;
-    padding: 20px 30px 5px 30px;
+    padding: 20px 30px 0px 30px;
     width: 80%;
-    height: 100%;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     transition: all 0.5s ease;
+    border-bottom: 5px solid ${props => props.theme.fontColor};
 `;
 
 const Logo = styled.a`
@@ -48,7 +49,19 @@ const Logo = styled.a`
         }
     }
 
+    svg:hover{
+        rect{
+            fill: ${props => props.theme.body};
+        }
 
+        path{
+            fill: ${props => props.theme.fontColor};
+        }
+    }
+
+    svg:active{
+        transform: scale(0.95);
+    }
 
     &:hover{
         text-decoration: underline;
@@ -80,6 +93,7 @@ const MenuLink = styled.a`
     text-decoration: none;
     color: ${props => props.theme.fontColor};
     font-size: 1.2rem;
+
 
     &:hover{
         text-decoration: underline;
@@ -165,7 +179,7 @@ const Navbar = (props) => {
     };
 
     return (
-        <Header>
+        <Header id="top">
             <NavContent>
                 <Logo href='https://ahmedhagar.com/' aria-label="Ahmed's Portfolio">
                     <LogoPic alt="Ahmed Hagar, the logo"/>

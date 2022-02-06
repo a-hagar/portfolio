@@ -4,7 +4,7 @@ import Profile from "../img/profile-2.jpg"
 
 const Bg = styled.div`
     width: 100%;
-    height: 850px;
+    height: 810px;
     background-color: ${props => props.theme.body};
     transition: all 0.5s ease;
 
@@ -17,7 +17,7 @@ const Bg = styled.div`
 const HeroDiv = styled.div`
     width: 80%;
     margin: auto;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -56,7 +56,7 @@ const SubTitle = styled.p`
     }
 
     @media(max-width: 820px){
-        padding-left: 20px;
+        padding-left: 0px;
         font-size: 22px;
     }
 
@@ -111,9 +111,9 @@ const ImgBg = styled.div`
     border-radius: 100%;
     overflow: hidden;
 
-    @media(max-width: 1024px){
-        height: 350px;
-        width: 350px;
+    @media(max-width: 930px){
+        height: 330px;
+        width: 330px;
         text-align: left;
     }
 

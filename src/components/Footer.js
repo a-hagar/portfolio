@@ -7,7 +7,7 @@ const FooterContainer = styled.footer`
     bottom: 0;
     width: 100%;
     height: 100px;
-    background-color: ${props => props.theme.fontColor};
+    background-color: ${props => props.theme.body};
     padding-bottom: 10px;
     transition: all 0.5s ease;
 
@@ -21,14 +21,14 @@ const FooterContent = styled.footer`
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border-top: 0.5px solid ${props => props.theme.fontColor};
+    border-top: 5px solid ${props => props.theme.fontColor};
 
 `;
 
 const Logo = styled.a`
     font-size: 1.5rem;
     font-weight: 800;
-    padding: 1rem 0;
+    padding: 1rem;
     text-decoration: none;
     color: #272932;
     display: flex;
@@ -49,14 +49,24 @@ const Logo = styled.a`
 
         rect{
             fill: ${props => props.theme.body};
-            stroke: ${props => props.theme.body};
+            stroke: ${props => props.theme.fontColor};
         }
 
         path{
             fill: ${props => props.theme.fontColor};
         }
     }
+    
+    svg:hover{
+        rect{
+            fill: ${props => props.theme.fontColor};
+            stroke: ${props => props.theme.body};
+        }
 
+        path{
+            fill: ${props => props.theme.body};
+        }
+    }
 
 
     &:hover{
@@ -76,17 +86,9 @@ const Logo = styled.a`
 const Copyright = styled.div`
     p, a{
         text-decoration: none;
-        color: ${props => props.theme.body};
+        color: ${props => props.theme.fontColor};
         padding: 10px 0px;
         margin: 10px 0px;
-    }
-
-    a:hover{
-        text-decoration: underline;
-    }
-
-    a:visited{
-        color: ${props => props.theme.fontColor};
     }
 
     @media(max-width: 768px){
@@ -100,7 +102,7 @@ const Footer = (props) => {
     return (
         <FooterContainer>
             <FooterContent>
-                <Logo href='https://ahmedhagar.com/' aria-label="Ahmed's Portfolio">
+                <Logo href='/#top' aria-label="Ahmed's Portfolio">
                     <LogoPic alt="Ahmed Hagar, the logo on the Footer" />
                 </Logo>
                 <Copyright>

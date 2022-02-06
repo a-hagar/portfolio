@@ -5,7 +5,7 @@ import Profile from "../img/hero_profile.png"
 
 const Bg = styled.div`
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     min-height: 800px;
     background-color: ${props => props.theme.body};
     transition: all 0.5s ease;
@@ -24,7 +24,7 @@ const Bg = styled.div`
 const HeroDiv = styled.div`
     width: 80%;
     margin: auto;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -42,8 +42,8 @@ const HeroDiv = styled.div`
 `;
 
 const Title = styled.h1`
-display: block;
-position:relative;
+    display: block;
+    position:relative;
     margin-top: 40px;
     font-size: 50px;
     color: ${props => props.theme.fontColor};
@@ -93,7 +93,7 @@ const SubTitle = styled.p`
     }
 
     @media(max-width: 520px){
-        font-size: 13px;
+        font-size: 20px;
         margin-bottom: 5px;
 
         &.last{
@@ -162,16 +162,17 @@ const AboutPic = styled.img`
 
 const ResumeBtn = styled.a`
     appearance: button; 
+    -webkit-appearance: none;
     font-size: 20px;
     margin: 20px 0px;
-    border: 1px solid ${props => props.theme.fontColor};
+    border: 2px solid ${props => props.theme.fontColor};
     border-radius: 50px;
     padding: 20px 50px;
     color: ${props => props.theme.fontColor};
     text-decoration: none;
 
     &:hover{
-        color: ${props => props.theme.accent};
+        color: ${props => props.theme.body};
         background-color: ${props => props.theme.fontColor};
         transform: scale(1.02);
         transition: all 0.3s ease;
@@ -198,7 +199,7 @@ const Hero = (props) => {
                     </ImgBg>
                 </HeroImg>
                 <Title>
-                    Hello, My name is Ahmed!
+                    Hello, my name is Ahmed!
                     <SubTitle className='first'>Developer. Designer. Writer.</SubTitle>
                     <SubTitle className='last'>Based in Toronto, 🇨🇦</SubTitle>
                     <ResumeBtn href={PDF} target = "_blank">
