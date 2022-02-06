@@ -90,7 +90,7 @@ const HeroImg = styled.div`
     @media(max-width: 500px){
         height: 280px;
         width: 280px;
-        text-align: center;
+        margin: 0px auto;
     }
 
     @media(max-width: 375px){
