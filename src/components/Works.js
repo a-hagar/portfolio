@@ -164,7 +164,7 @@ const Works = () => {
 
                             <a id='case-study-link' href='/tracktistics'>View Case Study</a>
                             <div className='techList'>
-                                <span id='text'>Built with: </span>
+                                <span id='text'><strong>Built with: </strong></span>
                                     <TechTab>UX Design</TechTab>
                                     <TechTab>Figma</TechTab>
                                     <TechTab id="last">User Research</TechTab>
@@ -176,7 +176,7 @@ const Works = () => {
                         </h2>
                         <p>A single-page application that allows users to find nearby restaurants in their locations using the Yelp & Google Maps APIs</p>
                         <div className='techList'>
-                            <span id='text'>Built with: </span>
+                            <span id='text'><strong>Built with: </strong></span>
                                 <TechTab>React</TechTab>
                                 <TechTab>Next.js</TechTab>
                                 <TechTab>Tailwind CSS</TechTab>
@@ -188,7 +188,7 @@ const Works = () => {
                             </h2>
                             <p>A note-taking app that lists your notes in chronological order. Write, edit, and delete notes of any size.</p>
                             <div className='techList'>
-                            <span id='text'>Built with: </span>
+                                <span id='text'><strong>Built with: </strong></span>
                                 <TechTab>HTML</TechTab>
                                 <TechTab>CSS</TechTab>
                                 <TechTab>Javascript</TechTab>

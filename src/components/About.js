@@ -4,7 +4,7 @@ import Profile from "../img/profile-2.jpg"
 
 const Bg = styled.div`
     width: 100%;
-    height: 810px;
+    height: 950px;
     background-color: ${props => props.theme.body};
     transition: all 0.5s ease;
 
