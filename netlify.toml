@@ -1,0 +1,19 @@
+[[headers]]
+  for = "/"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "script-src 'self'"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer"
+    X-Content-Type-Options = "nosniff"
+    Strict-Transport-Security = 'max-age=63072000'
+
+[[headers]]
+  for = "/tracktistics"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "script-src 'self'"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer"
+    X-Content-Type-Options = "nosniff"
+    Strict-Transport-Security = 'max-age=63072000'

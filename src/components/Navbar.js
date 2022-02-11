@@ -6,21 +6,28 @@ import PDF from "../files/Hagar_resume.pdf";
 //import { ReactComponent as GithubLogo } from "../img/github.svg"
 
 const Header = styled.header`
+    position: sticky;
+    z-index: 10;
+    top: 0;
     width: 100%;
     height: 100px;
-    padding-bottom: 15px;
     background-color: ${props => props.theme.body};
     display: flex;
     align-items: center;
     transition: all 0.5s ease;
+
+    @media(max-width: 768px){
+        position: relative;
+    }
 `;
 
 const NavContent = styled.nav`
     margin: 0px auto;
-    padding: 20px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     width: 80%;
     max-width: 1000px;
     height: 90px;
+    background-color: ${props => props.theme.body};
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -196,7 +203,7 @@ const Navbar = (props) => {
     };
 
     return (
-        <Header id="top">
+        <Header>
             <NavContent>
                 <ToggleContainer>
                         <Toggle id="checkbox" type="checkbox" onClick={changeTheme}/>

@@ -6,7 +6,7 @@ import { ReactComponent as MailLogo } from "../img/mail.svg"
 const Bg = styled.div`
     width: 100%;
     height: 800px;
-    background-color: ${props => props.theme.body};
+    background-color: ${props => props.theme.fontColor};
     transition: all 0.5s ease;
     padding-top: 50px;
 
@@ -34,7 +34,7 @@ const ContactDiv = styled.div`
 const Title = styled.h1`
     margin: 100px 0px 0px 0px;
     font-size: 50px;
-    color: ${props => props.theme.fontColor};
+    color: ${props => props.theme.body};
     height: 50px;
     width: 100%;
     text-align: center;
@@ -59,7 +59,7 @@ const Title = styled.h1`
 const SubTitle = styled.p`
     margin: 50px auto 20px auto;
     font-size: 25px;
-    color: ${props => props.theme.fontColor};
+    color: ${props => props.theme.body};
     font-weight: 400;
     margin-bottom: 50px;
     text-align: center;
@@ -90,27 +90,27 @@ const ResumeBtn = styled.a`
     margin: 10px;
     border-radius: 50px;
     padding: 30px 60px;
-    border: 1px solid ${props => props.theme.fontColor};
-    color: ${props => props.theme.fontColor};
+    border: 1px solid ${props => props.theme.body};
+    color: ${props => props.theme.body};
     text-decoration: none;
 
     svg {
         width: 25px;
-        fill: ${props => props.theme.fontColor};
-        stroke: ${props => props.theme.body};
+        fill: ${props => props.theme.body};
+        stroke: ${props => props.theme.fontColor};
     }
 
 
     &:hover{
-        background-color: ${props => props.theme.fontColor};
-        color: ${props => props.theme.body};
+        background-color: ${props => props.theme.body};
+        color: ${props => props.theme.fontColor};
         transform: scale(1.02); 
     }
 
     &:hover svg {
         width: 25px;
-        fill: ${props => props.theme.body};
-        stroke: ${props => props.theme.fontColor};
+        fill: ${props => props.theme.fontColor};
+        stroke: ${props => props.theme.body};
     }
 
     &:active{

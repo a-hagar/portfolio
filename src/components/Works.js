@@ -41,7 +41,7 @@ const WorksDiv = styled.div`
 `;
 
 const Title = styled.h1`
-    margin: 100px 0px 0px 0px;
+    margin: 150px 0px 0px 0px;
     font-size: 50px;
     color: ${props => props.theme.body};
     height: 50px;

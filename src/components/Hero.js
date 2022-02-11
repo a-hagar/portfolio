@@ -4,11 +4,12 @@ import Profile from "../img/hero_profile.png"
 
 const Bg = styled.div`
     width: 100%;
-    height: 70vh;
+    height: 90vh;
     min-height: 750px;
     background-color: ${props => props.theme.body};
     transition: all 0.5s ease;
-    
+
+
     @media(max-width: 768px){
         padding-top: 0px;
         flex-direction: column;
@@ -27,7 +28,7 @@ const HeroDiv = styled.div`
     height: 70vh;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content:center;
     flex-direction: row-reverse;
 
     @media(max-width: 768px){
@@ -82,7 +83,7 @@ const SubTitle = styled.p`
     }
 
     @media(max-width: 768px){
-        margin-top: 15px;
+        margin-top: 10px;
         width: 100%;
         font-size: 20px;
         padding-left: 0px;
@@ -133,7 +134,7 @@ const ImgBg = styled.div`
     @media(max-width: 768px){
         height: 300px;
         width: 300px;
-        margin: 60px auto 0px;
+        margin: 10px auto 0px;
         float: none;
     }
 
@@ -164,12 +165,12 @@ const ResumeBtn = styled.a`
     appearance: button; 
     -webkit-appearance: none;
     font-size: 20px;
-    margin: 20px 0px;
     border: 2px solid ${props => props.theme.fontColor};
     border-radius: 50px;
     padding: 20px 50px;
     color: ${props => props.theme.fontColor};
     text-decoration: none;
+    margin-bottom: 50px;
 
     &:hover{
         color: ${props => props.theme.body};
@@ -191,7 +192,7 @@ const ResumeBtn = styled.a`
 
 const Hero = (props) => {
     return (
-        <Bg>
+        <Bg id="top">
             <HeroDiv>
                 <HeroImg>
                     <ImgBg>
@@ -205,6 +206,7 @@ const Hero = (props) => {
                     <ResumeBtn href="/#works">
                         View Past Work
                     </ResumeBtn>
+
                 </Title>
             </HeroDiv>
         </Bg>
