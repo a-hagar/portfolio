@@ -174,7 +174,7 @@ const Works = () => {
                         <h2>SafeDine
                             <a href='https://github.com/a-hagar/safedine' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo id='SafeDine-Github' alt="View the code at Github"/></a>
                         </h2>
-                        <p>A single-page application that allows users to find nearby restaurants in their locations using the Yelp & Google Maps APIs</p>
+                        <p>A single-page application that allows users to find nearby restaurants in their location using the Yelp & Google Maps APIs</p>
                         <div className='techList'>
                             <span id='text'><strong>Built with: </strong></span>
                                 <TechTab>React</TechTab>
@@ -186,7 +186,7 @@ const Works = () => {
                             <h2>Notes+
                                 <a href='https://github.com/a-hagar/notes' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo id='Notes-Github' alt="View the code at Github"/></a>
                             </h2>
-                            <p>A note-taking app that lists your notes in chronological order. Write, edit, and delete notes of any size.</p>
+                            <p>A note-taking app that lists your notes in chronological order. Write, edit, and delete any notes that you published.</p>
                             <div className='techList'>
                                 <span id='text'><strong>Built with: </strong></span>
                                 <TechTab>HTML</TechTab>

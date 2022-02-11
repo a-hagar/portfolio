@@ -22,11 +22,18 @@ const UXDesignDiv = styled.div`
 
 `;
 
+const UXTitle = styled.div`
+
+`;
+
 const UXDesign = (props) => {
     return( 
         <Bg>
             <UXDesignDiv>
-
+                <UXTitle>
+                    <h3>The Design Approach</h3>
+                    <p>I structured the website to provide a much information for users to access</p>
+                </UXTitle>
             </UXDesignDiv>
         </Bg>
     )
