@@ -8,6 +8,7 @@ const FooterContainer = styled.footer`
     width: 100%;
     height: 100px;
     background-color: ${props => props.theme.body};
+    padding-top: 20px;
     padding-bottom: 10px;
     transition: all 0.5s ease;
 
@@ -17,18 +18,17 @@ const FooterContent = styled.footer`
     margin: 0px auto 0px;
     height: 100%;
     width: 80%;
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border-top: 5px solid ${props => props.theme.fontColor};
-
 `;
 
 const Logo = styled.a`
     font-size: 1.5rem;
     font-weight: 800;
-    padding: 1rem;
+    padding:  0px;
     text-decoration: none;
     color: #272932;
     display: flex;
@@ -102,7 +102,7 @@ const Footer = (props) => {
     return (
         <FooterContainer>
             <FooterContent>
-                <Logo href='/#top' aria-label="Ahmed's Portfolio">
+                <Logo href='#top' aria-label="Ahmed's Portfolio">
                     <LogoPic alt="Ahmed Hagar, the logo on the Footer" />
                 </Logo>
                 <Copyright>

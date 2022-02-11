@@ -16,6 +16,7 @@ const Bg = styled.div`
 
 const HeroDiv = styled.div`
     width: 80%;
+    max-width: 1200px;
     margin: auto;
     height: 80vh;
     display: flex;

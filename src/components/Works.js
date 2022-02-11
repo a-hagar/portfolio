@@ -24,6 +24,7 @@ const Bg = styled.div`
 
 const WorksDiv = styled.div`
     width: 80%;
+    max-width: 1200px;
     margin: auto;
     height: 100vh;
     display: flex;
@@ -96,6 +97,10 @@ const GridItem = styled.div`
         word-break: break-word;
     }
 
+    #case-study-link{
+        color: ${props => props.theme.fontColor};
+        font-weight: 700;
+    }
 
     h2{
         font-size: 25px;
@@ -136,6 +141,7 @@ const TechTab = styled.a`
     color: ${props => props.theme.body};
     padding: 5px 20px;
     margin: 5px;
+    margin-right: auto;
     border-radius: 50px;
     font-weight: 700;
     white-space: normal;
@@ -153,15 +159,15 @@ const Works = () => {
                     
                     <GridContainer>
                         <GridItem>
-                        <h2>LibraryCMS
-                            <a href='https://github.com/a-hagar/LibraryCMS' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo id='LibraryCMS-Github' alt="View the code at Github"/></a>
-                        </h2>
-                            <p>A CRUD-based application that allows users to access information about registered members, books, and locations. Authenicated users can also edit and delete content.</p>
+                        <a id='case-study-link' href='/tracktistics'><h2>Tracktistics</h2></a>
+                            <p>A web app that allows Spotify users to view their recent and lifetime music-listening history. Users can also discover their favourite artists and songs before the Wrapped campaign.</p>
+
+                            <a id='case-study-link' href='/tracktistics'>View Case Study</a>
                             <div className='techList'>
                                 <span id='text'>Built with: </span>
-                                    <TechTab>ASP.NET MVC</TechTab>
-                                    <TechTab>C#</TechTab>
-                                    <TechTab>SQL Server</TechTab>
+                                    <TechTab>UX Design</TechTab>
+                                    <TechTab>Figma</TechTab>
+                                    <TechTab id="last">User Research</TechTab>
                             </div>
                         </GridItem>
                         <GridItem>

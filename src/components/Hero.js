@@ -1,12 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import PDF from "../files/Hagar_resume.pdf"
 import Profile from "../img/hero_profile.png"
 
 const Bg = styled.div`
     width: 100%;
-    height: 80vh;
-    min-height: 800px;
+    height: 70vh;
+    min-height: 750px;
     background-color: ${props => props.theme.body};
     transition: all 0.5s ease;
     
@@ -23,15 +22,16 @@ const Bg = styled.div`
 
 const HeroDiv = styled.div`
     width: 80%;
+    max-width: 990px;
     margin: auto;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row-reverse;
 
     @media(max-width: 768px){
-        padding-top: 80px;
+        padding-top: 0px;
         flex-direction: column;
     }
 
@@ -118,8 +118,8 @@ const HeroImg = styled.div`
 const ImgBg = styled.div`
     display: block;
     position:relative;
-    height: 400px;
-    width: 400px;
+    height: 390px;
+    width: 390px;
     background-color: ${props => props.theme.fontColor};
     float: right;
     border-radius: 100%;
@@ -202,8 +202,8 @@ const Hero = (props) => {
                     Hello, my name is Ahmed!
                     <SubTitle className='first'>Developer. Designer. Writer.</SubTitle>
                     <SubTitle className='last'>Based in Toronto, 🇨🇦</SubTitle>
-                    <ResumeBtn href={PDF} target = "_blank">
-                        View Resume
+                    <ResumeBtn href="/#works">
+                        View Past Work
                     </ResumeBtn>
                 </Title>
             </HeroDiv>

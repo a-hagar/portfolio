@@ -4,35 +4,32 @@ import styled from 'styled-components'
 
 const Bg = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 81vh;
     background-color: ${props => props.theme.body};
     transition: all 0.5s ease;
     
     @media(max-width: 768px){
         padding-top: 0px;
-        flex-direction: column;
-        height: 100vh;
+        height: 75vh;
     }
 
     @media (orientation:landscape) and (max-width: 800px){
-        height: 650px;
+        height: 750px;
     }
 `;
 
 const HeroDiv = styled.div`
     width: 80%;
-    margin: auto;
-    height: 90vh;
+    max-width: 1000px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-between;
+    margin: 0px auto 0px auto;
 
     @media(max-width: 768px){
-        padding-top: 100px;
-        flex-direction: column;
-        justify-content: flex-start;
+        padding-top: 0px;
+        width: 100%;
     }
 
     @media (orientation:landscape) and (max-width: 800px){
@@ -44,18 +41,19 @@ const HeroDiv = styled.div`
 const Title = styled.h1`
     display: block;
     position: relative;
-    margin-top: 40px;
-    font-size: 45px;
+    margin: 20px 0px;
+    font-size: 2em;
     color: ${props => props.theme.fontColor};
-    width: 45%;
+    width: 100%;
+    height: 40%;
+    max-height: 40%;
     font-weight: 700;
-    float: left;
 
     @media(max-width: 768px){
         font-size: 2.3em;
-        text-align: center;
-        width: 100%;
-        margin: 30px auto;
+        padding-top: 45%;
+        height: 100%;
+        width: 90%;
     }
 `;
 
@@ -67,6 +65,7 @@ const SubTitle = styled.p`
     margin-bottom: 10px;
 
     &.last{
+        width: 70%;
         margin-bottom: 50px;
     }
 
@@ -78,62 +77,37 @@ const SubTitle = styled.p`
     @media(max-width: 768px){
         width: 100%;
         font-size: 0.5em;
-        padding-left: 0px;
-
-        &.last{
-            margin: 10px auto 30px auto;
-        }
     }
 `;
 
 const HeroImg = styled.div`
-    right: 0;
-    width: 50%;
+    width: 100%;
+    height: 40%;
     font-size: 50px;
     color: ${props => props.theme.fontColor};
 
     @media(max-width: 768px){
-        width: 80%;
+        width: 100%;
+        height: 0px;
     }
 `;
 
 const AboutPic = styled.img`
     display: block;
-    margin: 0px auto 0px auto;
-    padding: 10px;
-    height: 90%;
-    max-width: 105%;
-    border-radius: 10px;
-    border: 2px solid ${props => props.theme.fontColor};
-    box-shadow: 6px 10px 15px -3px ${props => props.theme.fontColor};
-`;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 480px;
+    height: auto;
 
-
-const ResumeBtn = styled.a`
-    appearance: button; 
-    -webkit-appearance: none;
-    font-size: 20px;
-    margin: 20px 0px;
-    border: 1px solid ${props => props.theme.fontColor};
-    border-radius: 50px;
-    padding: 20px 50px;
-    color: ${props => props.theme.fontColor};
-    text-decoration: none;
-
-    &:hover{
-        color: ${props => props.theme.body};
-        background-color: ${props => props.theme.fontColor};
-        transform: scale(1.02);
-        transition: all 0.3s ease;
+    @media(max-width: 768px){
+        max-width: 100%;
+        max-height: 185px;
     }
 
-    &:active{
-        transform: scale(0.90);
-    }
-
-    @media(max-width: 600px){
-        font-size: 15px;
-        padding: 15px 30px;
+    @media (orientation:landscape) and (max-width: 800px){
+        width: 100%;
     }
 `;
 
@@ -147,7 +121,8 @@ const Hero = (props) => {
                 <Title>
                     {props.title}
                     <SubTitle className='first'>{props.subTitle1}</SubTitle>
-                    <SubTitle className='last'>{props.subTitle2}</SubTitle>
+                    <SubTitle className='last'>Role: {props.subTitle2}</SubTitle>
+                    
                 </Title>
             </HeroDiv>
         </Bg>

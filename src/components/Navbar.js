@@ -1,12 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
-import { ReactComponent as LogoPic} from "../img/nav-logo.svg"
+import React from 'react';
+import styled from 'styled-components';
+import { ReactComponent as LogoPic} from "../img/nav-logo.svg";
+import PDF from "../files/Hagar_resume.pdf";
 //import { ReactComponent as LinkedInLogo } from "../img/linkedin.svg"
 //import { ReactComponent as GithubLogo } from "../img/github.svg"
 
 const Header = styled.header`
     width: 100%;
-    height: 75px;
+    height: 100px;
+    padding-bottom: 15px;
     background-color: ${props => props.theme.body};
     display: flex;
     align-items: center;
@@ -17,13 +19,14 @@ const NavContent = styled.nav`
     margin: 0px auto;
     padding: 20px 0px 0px 0px;
     width: 80%;
+    max-width: 1000px;
     height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     transition: all 0.5s ease;
-    border-bottom: 2px solid ${props => props.theme.fontColor};
+    //border-bottom: 2px solid ${props => props.theme.fontColor};
 
     @media(max-width: 768px){
         flex-direction: row-reverse;
@@ -83,7 +86,7 @@ const Menu = styled.div`
     justify-content:  space-between;
     align-items: center;
     position: relative;
-    width: 220px;
+    width: 350px;
     
     @media(max-width: 768px){
         display: none;
@@ -99,6 +102,16 @@ const MenuLink = styled.a`
     color: ${props => props.theme.fontColor};
     font-size: 1.2rem;
 
+    &:last-child{
+        padding: 10px 20px;
+        border: 1px solid ${props => props.theme.fontColor};
+        border-radius: 10px;
+    }
+
+    &:hover&:last-child{
+        background-color: ${props => props.theme.fontColor};
+        color: ${props => props.theme.body};
+    }
 
     &:hover{
         text-decoration: underline;
@@ -107,8 +120,7 @@ const MenuLink = styled.a`
 
 const ToggleContainer = styled.div`
     position: relative;
-    padding-right: 5px;
-    width: 200px;
+    width: 350px;
 
     @media(max-width: 768px){
         width: 75px;
@@ -118,7 +130,7 @@ const ToggleContainer = styled.div`
 const ToggleLabel = styled.label`
     position: absolute;
     top: 19%;
-    left: 8px;
+    left: 0px;
     width: 50px;
     height: 25px;
     border-radius: 15px;
@@ -173,15 +185,6 @@ const Toggle = styled.input`
     }
 `;
 
-const MenuLogo = styled.div`
-    padding-top: 5px;
-    
-    svg {
-        fill: ${props => props.theme.fontColor};
-    }
-`;
-
-
 
 const Navbar = (props) => {
     function changeTheme(){
@@ -199,13 +202,14 @@ const Navbar = (props) => {
                         <Toggle id="checkbox" type="checkbox" onClick={changeTheme}/>
                         <ToggleLabel label="DarkModeSwitch" htmlFor="checkbox"><p>Toggle</p></ToggleLabel>
                 </ToggleContainer>
-                <Logo href='https://ahmedhagar.com/' aria-label="Ahmed's Portfolio">
+                <Logo href='/' aria-label="Ahmed's Portfolio">
                     <LogoPic alt="Ahmed Hagar, the logo"/>
                 </Logo>
                 <Menu>
                     <MenuLink href='/#works'>Works</MenuLink>
                     <MenuLink href='/#about'>About</MenuLink>
                     <MenuLink href='/#contact'>Contact</MenuLink>
+                    <MenuLink id="resumeBtn" href={PDF} target="_blank" rel="noreferrer">Resume</MenuLink>
                 </Menu>
             </NavContent>
         </Header>

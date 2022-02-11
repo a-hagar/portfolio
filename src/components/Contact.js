@@ -18,6 +18,7 @@ const Bg = styled.div`
 const ContactDiv = styled.div`
     position: relative;
     width: 80%;
+    max-width: 1200px;
     margin: 0px auto;
     height: 100%;
     display: flex;
