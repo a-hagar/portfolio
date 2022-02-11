@@ -99,7 +99,7 @@ const Solution = (props) => {
                 </p>
             </SolutionText>
             <SolutionImg>
-                <SolutionPic src={props.img} />
+                <SolutionPic src={props.img} alt="The Home Dashboard of Tracktistics, showing user listening data"/>
                 <p>The Tracktistics Dashboard, displaying the user's recent results.</p>
             </SolutionImg>
         </SolutionDiv>

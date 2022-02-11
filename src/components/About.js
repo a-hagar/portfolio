@@ -9,7 +9,7 @@ const Bg = styled.div`
     transition: all 0.5s ease;
 
     @media(max-width: 500px){
-        height: 750px;
+        height: 900px;
     }
 
 `;
@@ -158,8 +158,15 @@ const About = (props) => {
                     </HeroImg>
                     <Title>
                         About Me
-                        <SubTitle>I have a journalism background, graduating from the University of Toronto & Centennial College Joint Program in 2019. Transitioning to web development, I learned and worked on web projects at Humber College's Web Development Program.</SubTitle>
-                        <SubTitle className='last'>When I'm not coding, I'm either cycling, shooting photos, or watching Raptors basketball.</SubTitle>
+                        <SubTitle>
+                            I am a junior UX Engineer with design and development skills, with a focus on responsive and accessible design. A common goal I aim to accomplish is to solve public problems with web apps.
+                        </SubTitle>
+                        <SubTitle>
+                            With a published writing background, I graduated from the University of Toronto Journalism Program in 2019. Transitioning to web development, I learned and worked on web projects at Humber College's Web Development Program.
+                        </SubTitle>
+                        <SubTitle className='last'>
+                            When I'm not coding, I'm either cycling, shooting photos, or watching Raptors basketball.
+                        </SubTitle>
                     </Title>
                 </HeroDiv>
             </div>

@@ -67,6 +67,7 @@ const ProblemText = styled.div`
 
 const ProblemImg = styled.div`
     width: 50%;
+    height: auto;
     margin-right: auto;
     padding-left: 20px;
     
@@ -112,7 +113,7 @@ const Problem = (props) => {
                 </ul>
             </ProblemText>
             <ProblemImg>
-                <ProblemPic src={props.img} />
+                <ProblemPic src={props.img} alt="Spotify Wrapped stories on smartphones"/>
                 <p>The 2021 Spotify Wrapped stories on smartphones</p>
             </ProblemImg>
         </ProblemDiv>

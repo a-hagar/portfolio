@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Bg = styled.div`
     width: 100%;
-    height: 81vh;
+    height: 90vh;
     background-color: ${props => props.theme.body};
     transition: all 0.5s ease;
     
@@ -116,7 +116,7 @@ const Hero = (props) => {
         <Bg>
             <HeroDiv>
                 <HeroImg>
-                        <AboutPic src={props.img}/>
+                        <AboutPic src={props.img} alt={props.alt}/>
                 </HeroImg>
                 <Title>
                     {props.title}

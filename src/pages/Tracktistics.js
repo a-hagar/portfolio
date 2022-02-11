@@ -24,6 +24,7 @@ const Tracktistics = (props) => {
         <CaseStudyHero 
             theme={props.theme} 
             img={TrackHomeLight}
+            alt={`The banner image of my Tracktistics project`}
             title={`Case Study: Tracktistics`} 
             subTitle1={`A music-tracking app that visualizes a user's listening history`}
             subTitle2={`UX Design + Research`}
