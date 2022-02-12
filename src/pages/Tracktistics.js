@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import TrackHomeLight from "../img/Frame 1.png";
 import Wrapped from "../img/wrapped.png";
 import TrackSolution from "../img/Home Results.png";
+import TrackHomePage from "../img/home.png";
 import { Helmet} from 'react-helmet-async';
 import Problem from '../components/case-studies/Problem';
 import Solution from '../components/case-studies/Solution';
@@ -36,10 +37,7 @@ const Tracktistics = (props) => {
         <Solution
           theme={props.theme} 
           img={TrackSolution}
-        />
-        <TrackUserResearch
-          theme={props.theme} 
-          img={TrackSolution}
+          img2={TrackHomePage}
         />
         <Footer theme={props.theme} />
     </div>
