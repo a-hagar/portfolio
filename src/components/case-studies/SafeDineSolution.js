@@ -4,14 +4,14 @@ import styled from 'styled-components';
 const Bg = styled.div`
     width: 100%;
     height: 81vh;
-    min-height: 1050px;
+    min-height: 1100px;
     background-color: ${props => props.theme.body};
     transition: all 0.5s ease;
     
     @media(max-width: 768px){
         padding-top: 20px;
         height: 80vh;
-        min-height: 850px;
+        min-height: 800px;
     }
 
     @media (orientation:landscape) and (max-width: 800px){
@@ -73,9 +73,10 @@ const SolutionText = styled.div`
 `;
 
 const SolutionImg = styled.div`
-    width: 100%;
+    width: 70%;
+
     p{
-        width: 80%;
+        width: 75%;
         margin: 0px auto 10px;
         color: ${props => props.theme.fontColor};
         text-align: center;
@@ -88,28 +89,26 @@ const SolutionImg = styled.div`
 `;
 
 const SolutionPic = styled.img`
-    width: 49%;
-    margin: auto;
+    width: 100%;
+    margin: 0px auto;
 `;
 
 
-const Solution = (props) => {
+const SafeDineSolution = (props) => {
   return (
     <Bg>
         <SolutionDiv>
             <SolutionText>
                 <h2>Solution</h2>
                 <p>
-                    Tracktistics (merging Tracks and Statistics) is a web-based solution that aims to give Spotify users access their listening data on any device. Connecting to the Spotify API, users can login and view their favourite songs and artists in some ranges (4 weeks, 6 months, and lifetime) at any time. 
+                    SafeDine aims to be a one-stop-shop to access restaurant information before ordering online. The app pulls data from Toronto's DineSafe inspection data to show how safe a restaurant is. Users can also find the delivery options available. Receiving restaurant data from Yelp's API and using the Google Maps API to display the locations.
                 </p>
             </SolutionText>
             <SolutionImg>
-                <SolutionPic src={props.img2} alt="The Home Page of Tracktistics"/>
-                <SolutionPic src={props.img} alt="The Home Dashboard of Tracktistics, showing user listening data"/>
-                <p>The Tracktistics Dashboard, displaying the user's recent results.</p>
+                <SolutionPic src={props.img} alt="The SafeDine prototypes made in Figma"/>
             </SolutionImg>
         </SolutionDiv>
     </Bg>
 );}
 
-export default Solution;
+export default SafeDineSolution;

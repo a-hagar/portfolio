@@ -93,7 +93,7 @@ const Menu = styled.div`
     justify-content:  space-between;
     align-items: center;
     position: relative;
-    width: 350px;
+    width: 300px;
     
     @media(max-width: 768px){
         display: none;
@@ -102,12 +102,12 @@ const Menu = styled.div`
 `;
 
 const MenuLink = styled.a`
-    padding: 0.5rem;
+    padding: 0.1rem;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
     color: ${props => props.theme.fontColor};
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     &:last-child{
         padding: 10px 20px;
@@ -127,7 +127,7 @@ const MenuLink = styled.a`
 
 const ToggleContainer = styled.div`
     position: relative;
-    width: 350px;
+    width: 300px;
 
     @media(max-width: 768px){
         width: 75px;

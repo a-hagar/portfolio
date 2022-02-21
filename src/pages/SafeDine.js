@@ -3,6 +3,13 @@ import Navbar from '../components/Navbar';
 import CaseStudyHero from '../components/case-studies/CaseStudyHero';
 import Footer from "../components/Footer";
 import { Helmet} from 'react-helmet-async';
+import SafeDineTitle from "../img/Case Study Banner.png";
+import UberEats from "../img/ubereats.png";
+import SafeDinePrototypes from "../img/safedine-prototypes.png";
+import SafeDineProblem from '../components/case-studies/SafeDineProblem';
+import SafeDineSolution from '../components/case-studies/SafeDineSolution';
+import SafeDineResearch from '../components/case-studies/SafeDineResearch';
+import SafeDineNextSteps from '../components/case-studies/SafeDineNextSteps';
 
 const SafeDine = (props) => {
   return(  
@@ -17,10 +24,25 @@ const SafeDine = (props) => {
         />
         <CaseStudyHero 
             theme={props.theme} 
-            //img={ }
+            img={SafeDineTitle}
             title={`Case Study: SafeDine`} 
             subTitle1={`A restaurant search app that allows users to find nearby restaurants`}
-            subTitle2={`UX Design + Research, Full-Stack Development`}
+            subTitle2={`UX Design + UX Research`}
+        />
+        <SafeDineProblem
+          theme={props.theme}
+          img={UberEats}
+        />
+        <SafeDineSolution
+          theme={props.theme}
+          img={SafeDinePrototypes}
+        />
+        <SafeDineResearch
+          theme={props.theme}
+          img={UberEats}
+        />
+        <SafeDineNextSteps 
+          theme={props.theme} 
         />
         <Footer theme={props.theme} />
     </div>

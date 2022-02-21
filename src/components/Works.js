@@ -171,10 +171,11 @@ const Works = () => {
                             </div>
                         </GridItem>
                         <GridItem>
-                        <h2>SafeDine
+                        <a id='case-study-link' href='/safedine'><h2>SafeDine
                             <a href='https://github.com/a-hagar/safedine' target="_blank" rel="noopener noreferrer" id='logo'><GithubLogo id='SafeDine-Github' alt="View the code at Github"/></a>
-                        </h2>
+                        </h2></a>
                         <p>A single-page application that allows users to find nearby restaurants in their location using the Yelp & Google Maps APIs</p>
+                        <a id='case-study-link' href='/safedine'>View Case Study</a>
                         <div className='techList'>
                             <span id='text'><strong>Built with: </strong></span>
                                 <TechTab>React</TechTab>
